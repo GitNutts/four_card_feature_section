@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  margin: 100px auto 50px auto;
+  margin: 75px auto 50px auto;
   max-width: 500px;
   text-align: center;
 }
@@ -113,7 +113,6 @@ header p {
 
   header {
     max-width: 300px;
-    margin-top: 75px;
   }
 
   h1 {
