@@ -13,7 +13,7 @@ body {
 }
 
 header {
-  margin: 50px auto;
+  margin: 100px auto 50px auto;
   max-width: 500px;
   text-align: center;
 }
@@ -113,6 +113,7 @@ header p {
 
   header {
     max-width: 300px;
+    margin-top: 75px;
   }
 
   h1 {
@@ -121,5 +122,9 @@ header p {
 
   .card p {
     margin-top: 5px;
+  }
+
+  .container {
+    margin-bottom: 75px;
   }
 }
