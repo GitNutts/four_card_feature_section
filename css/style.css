@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+}
+
+header {
+  margin: 50px auto;
+  max-width: 500px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+  font-size: 2.25rem;
+}
+
+h1 span {
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.2rem;
+  color: hsl(234, 12%, 34%);
+}
+
+p {
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+}
+
+header p {
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto 50px auto;
+}
+
+.card {
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  margin: 15px;
+  width: 350px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+}
+
+.card-1::after {
+  background-color: hsl(180, 62%, 55%);
+}
+
+.card-2::after {
+  background-color: hsl(0, 78%, 62%);
+}
+
+.card-3::after {
+  background-color: hsl(212, 86%, 64%);
+}
+
+.card-4::after {
+  background-color: hsl(34, 97%, 64%);
+}
+
+.card-push {
+  transform: translateY(50%);
+}
+
+.card p {
+  font-size: 0.85rem;
+  margin: 15px 0 40px 0;
+}
+
+.card img {
+  display: block;
+  margin-left: auto;
+}
+
+@media (max-width: 1024px) {
+  .card-push {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 425px) {
+  .card {
+    width: 325px;
+  }
+
+  header {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .card p {
+    margin-top: 5px;
+  }
+}
